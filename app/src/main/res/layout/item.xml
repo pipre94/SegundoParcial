@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/logo_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/txt_name_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:layout_toRightOf="@id/logo_user"
+        android:text="Hola mundo"
+        android:gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/txt_phone_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_toRightOf="@id/logo_user"
+        android:layout_below="@id/txt_name_user"
+        android:text="carloso"
+        android:gravity="center"/>
+
+
+
+</RelativeLayout>

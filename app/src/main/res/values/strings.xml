@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SegundoParcial</string>
+    <string name="txt_btn_cargar_datos">Cargar Datos</string>
+    <string name="str_menu_cargar_datos">Cargar datos</string>
+</resources>

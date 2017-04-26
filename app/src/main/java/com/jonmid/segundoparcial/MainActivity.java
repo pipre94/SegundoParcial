@@ -6,6 +6,7 @@ import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
         loader = (ProgressBar) findViewById(R.id.loader);
         myRecycler = (RecyclerView) findViewById(R.id.myRecycler);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        myRecycler.setLayoutManager(linearLayoutManager);
     }
 
     // Metodo para validar la conexion a internet
